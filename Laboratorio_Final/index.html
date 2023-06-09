@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="bloques">
+        <div class="zona">
+            <form method="POST" action="index.php" class="registro" id="registro">
+              
+                   <h1 class="">Datos Personales</h1>
+                    <!-- Grupo: Nombre -->
+                    <div class="group" >
+                        <input type="text" name="nombre" id="nombre" class="nombre-linea-input"  maxlength="20" required   autocomplete="off"/>
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="nombre">Nombre</label>
+                        
+
+                    </div>
+                    <!-- Grupo: Primer Apellido -->
+                    <div class="group">
+                        <input type="text" name="primer_apellido" id="primer_apellido" class="primer_apellido-linea-input" maxlength="20"required  autocomplete="off" />
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="primer_apellido">Primer Apellido</label>
+                        
+                    </div>
+
+                    <!-- Grupo: Segundo Apellido -->
+                    <div class="group">
+                        <input type="text"  name="segundo_apellido" id="segundo_apellido" class="segundo_apellido-linea-input" maxlength="20" required autocomplete="off" />
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="segundo_apellido">Segundo Apellido</label>
+                       
+                    </div>
+                    <!-- Grupo: Email -->
+                    <div class="group">
+                        <input type="email" name="email" id="email" class="email-linea-input" required   autocomplete="off"/>
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="email">Email</label>
+                       
+                    </div>
+                    <!-- Grupo: Login-->
+                    <div class="group">
+                        <input type="text"  name="login" id="login"  maxlength="15" class="login-linea-input" required  autocomplete="off"/>
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="login">Nombre de Usuario</label>
+                       
+                    </div>
+                    <!-- Grupo: Contraseña -->
+                    <div class="group">
+                        <input type="password" name="clave" id="clave" minlength="4" maxlength="8" class="clave-linea-input"required  autocomplete="off" />
+                        <p class="error"></p>
+                        <span class="highlight"></span>
+                        <label for="clave">Contraseña</label>
+                        
+                    </div>
+
+                    <!-- Grupo: Boton -->
+                    <div class="">
+                        <button type="submit" name="crear" id="crear">Crear Cuenta</button>
+                        <p class="warnings" id="warnings"></p>
+                    </div>
+              
+            </form>
+        </div>
+        <div class="zona izquierda">
+                <h1>Accede a tu cuenta</h1>
+                
+                <!-- Grupo: Boton -->
+                <div>
+                    <button type="submit" name="sesion" id="sesion"><a href="cuenta.html" target="_self">Iniciar Sesion</a></button>
+                </div>
+         </div>        
+    </div>
+    <div method="POST" action="info.php" class="info" id="info">
+        <button type="submit" name="datos" id="datos"><a href="info.php" target="_self">Datos</a></button>
+    </div>
+
+  <script src="script/validar.js"></script>
+</body>
+
+</html>
